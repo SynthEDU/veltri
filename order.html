@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order | Veltri</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Veltri</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="order.html">Order</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Place Your Order</h2>
+    <form
+      action="https://formspree.io/f/mjkwdavg"
+      method="POST"
+    >
+      <label>
+        Product:
+        <input type="text" name="product" required>
+      </label>
+
+      <label>
+        Full Name:
+        <input type="text" name="name" required>
+      </label>
+
+      <label>
+        Email:
+        <input type="email" name="email" required>
+      </label>
+
+      <label>
+        Shipping Address:
+        <textarea name="address" required></textarea>
+      </label>
+
+      <button type="submit" class="btn">Submit Order</button>
+    </form>
+
+    <p style="margin-top: 1rem; font-size: 0.9rem; color: gray;">
+      You will receive a confirmation email after submission.
+    </p>
+  </main>
+
+  <footer>
+    <p>© 2025 Veltri</p>
+  </footer>
+</body>
+</html>
