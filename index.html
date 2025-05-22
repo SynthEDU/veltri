@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Veltri — Modern Finds, Delivered</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Veltri</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="order.html">Order</a>
+      <a href="#" onclick="promptPassword()">Admin</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Modern Finds, Delivered Fast</h2>
+      <p>Shop trending products with instant fulfillment, no hassle.</p>
+      <a href="order.html" class="btn">Start Shopping</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Veltri. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function promptPassword() {
+      const password = prompt("Enter admin password:");
+      if (password === "veltrikey") {
+        window.location.href = "admin.html";
+      } else {
+        alert("Access denied.");
+      }
+    }
+  </script>
+</body>
+</html>
